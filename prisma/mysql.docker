@@ -1,0 +1,3 @@
+docker run --name mysql1 -p 13306:3306 -e MYSQL_ROOT_PASSWORD=my1234 -d mysql:8.0.1
+
+# 默认的3306端口可能被操作系统阻止了，开启13306可以在localhost访问

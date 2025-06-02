@@ -18,14 +18,7 @@ const client = new PrismaClient()
 // }
 
 async function main() {
-    let result = await client.user.findMany({
-        skip: 5, // 分页，从第6条查起
-        take: 2, // 分页，查2条
-        where: {  // GraphQL筛选
-            name: {
-                startsWith: 'A'
-            }
-        }
+    let result = await client.a.findMany({
     })
     console.log("result:", result)
 }
