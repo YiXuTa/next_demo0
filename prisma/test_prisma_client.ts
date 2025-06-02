@@ -18,7 +18,7 @@ const client = new PrismaClient()
 // }
 
 async function main() {
-    let result = await client.a.findMany({
+    let result = await client.bbbb.findMany({
     })
     console.log("result:", result)
 }

@@ -1,17 +1,21 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "prisma-client1"
+}
+
 datasource db {
   provider = "mysql"
   url      = "mysql://root:my1234@localhost:13306/x1"
 }
-
-generator client {
-  provider = "prisma-client-js"
-  output = "prisma-client1"
-}
-
 
 model a {
   pk1 Int     @id @default(autoincrement())
   c2  Int?
   c3  String?
   c4  String? @unique(map: "a_pk2")
+}
+
+model bbbb {
+  bpk Int  @id @default(autoincrement())
+  b2  Int?
 }
